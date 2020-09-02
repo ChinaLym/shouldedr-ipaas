@@ -9,7 +9,11 @@
 
 为了方便维护这些服务，最好有相似的路径，如 `/opt/infrastructure/mysql`、`/opt/infrastructure/redis`，且每个中间件下的日志、配置文件、状态数据应该有相似的目录名称，以更好的维护、迁移等。
 
-- 这里都将采用 `/opt/shoulder` 这个目录作为默认的安装部署目录
+- 这里都将采用 `/opt/shoulder/xxx` 这个目录作为xxx的安装部署目录
+- `/opt/shoulder/xxx/sample.sh` 一行命令通过官方镜像构建运行一个单实例的进程
+- `/opt/shoulder/xxx/2/docker-compose` 通过官方镜像构建运行一组分别为主、从节点的2个容器
+- `/opt/shoulder/xxx/3/docker-compose` 通过官方镜像构建运行一组简单分布式的3个容器
+- `/opt/shoulder/xxx/yyy/docker-compose` 更多分布式部署方案
 - 统一配置文件夹路径 `/opt/shoulder/xxx/conf`
 - 统一日志文件夹路径 `/opt/shoulder/xxx/log`
 - 统一数据文件夹路径 `/opt/shoulder/xxx/data`
